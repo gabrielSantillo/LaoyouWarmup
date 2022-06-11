@@ -43,6 +43,10 @@ img {
     margin: 0px 10vw;
 }
 
+#page-main-desktop-layout {
+    display: none;
+}
+
 #page-main>h1 {
     margin: 40px 25px 25px;
     color: rgb(190, 54, 54);
@@ -92,4 +96,18 @@ img {
     display: grid;
     text-align: center;
     place-items: center;
+}
+
+@media only screen and (min-width: 1080px) {
+    #page-main-mobile-layout {
+        display: none;
+    }
+
+    #page-main-desktop-layout {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 25px;
+    }
+
+    
 }
